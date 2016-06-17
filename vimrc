@@ -60,7 +60,7 @@ set tabstop=4
 " GUI
 if has('gui_running')
     set guioptions=""                       " Disable all menus etc in gvim
-    set guifont=Inconsolata:h10,Consolas:h10
+    set guifont=Consolas:h10
     silent! colorscheme solarized
 endif
 
