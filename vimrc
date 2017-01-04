@@ -1,4 +1,4 @@
-﻿set nocompatible
+set nocompatible
 
 " Load plugin manager (platform-independent, inspired by Vundle wiki)
 if (has('win32') || has('win64')) && &shellcmdflag =~ '/'
