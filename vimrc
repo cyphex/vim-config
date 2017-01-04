@@ -1,8 +1,10 @@
-﻿" Load Vundle (platform-independent, inspired by Vundle wiki)
+﻿set nocompatible
+
+" Load plugin manager (platform-independent, inspired by Vundle wiki)
 if (has('win32') || has('win64')) && &shellcmdflag =~ '/'
-    let $BUNDLEFILE=expand('$HOME/vimfiles/bundles.vim')
+    let $BUNDLEFILE=expand('$HOME/vimfiles/plugins.vim')
 else
-    let $BUNDLEFILE=expand('$HOME/.vim/bundles.vim')
+    let $BUNDLEFILE=expand('$HOME/.vim/plugins.vim')
 endif
 if filereadable($BUNDLEFILE)
     source $BUNDLEFILE
