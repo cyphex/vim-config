@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-if [[ ! -d "~/.vim/bundles" ]]; then
-    git clone git://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    vim -u ~/.vim/bundles.vim +PluginInstall +qall
+if [[ ! -d "~/.vim/bundle" ]]; then
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    vim -u ~/.vim/plugins.vim +PlugInstall +qall
 else
-    echo "Vundle appears to be already initialized, stopping."
+    echo "vim-plug appears to be already initialized, stopping."
 fi
