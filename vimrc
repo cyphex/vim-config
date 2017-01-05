@@ -63,11 +63,15 @@ set shiftwidth=4                            " Indentation step size
 set softtabstop=4
 set tabstop=4
 
+" Colors
+colorscheme solarized
+call togglebg#map("<F11>")
+let g:airline_theme='solarized'
+
 " GUI
 if has('gui_running')
     set guioptions=""                       " Disable all menus etc in gvim
     set guifont=Consolas:h10
-    silent! colorscheme solarized
 endif
 
 " Statusline

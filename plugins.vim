@@ -29,6 +29,7 @@ Plug 'vim-syntastic/syntastic'          " Code checking
 
 " Colorschemes
 Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline-themes'   " Colorschemes for airline, esp. solarized
 
 " LANGUAGE-/FILETYPE-SPECIFIC PLUGINS
 " ===================================
