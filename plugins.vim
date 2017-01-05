@@ -42,5 +42,7 @@ Plug 'vim-scripts/python_match.vim'     " %-matching for if/else etc.
 " Git
 Plug 'tpope/vim-git'                    " Syntax, indent etc.
 
+" Jinja2
+Plug 'Glench/Vim-Jinja2-Syntax'         " Jinja2 syntax, indent, autodetect
 " Finish vim-plug configuration
 call plug#end()
