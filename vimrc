@@ -16,11 +16,14 @@ endif
 filetype plugin indent on
 syntax on
 
+let mapleader=","
+
 set autoread
 set background=dark
 set display+=lastline                       " Display incomplete lines
 set fileencodings=utf-8,latin1
 set fillchars=""                            " Disable characters in separators
+set foldlevelstart=99                       " Generally start with all folds open
 set hidden                                  " Switch buffers without saving
 set history=1000                            " Plenty of history
 set lazyredraw                              " No redraw while executing macros etc.
@@ -95,12 +98,13 @@ function! StripTrailingWhitespace()
 endfunction
 
 "
-" Custom mappings and plugin configuration
+" Plugin configuration and mappings
 "
 
+" NERDTree
 map <F2> :NERDTreeToggle<CR>
 
-" Airline configuration
+" Airline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_mode_map = {
@@ -117,6 +121,18 @@ let g:airline_mode_map = {
     \ '' : 'SB',
     \ }
 
-" Python mode
-let g:pymode_python = 'python3'
-let g:pymode_rope = 0
+" Syntastic
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_signs = 1
+let g:syntastic_error_symbol = 'X'
+let g:syntastic_style_error_symbol = 'S'
+let g:syntastic_warning_symbol = 'x'
+let g:syntastic_style_warning_symbol = 's'
+
+" Python
+let g:jedi#force_py_version = 3
+let g:syntastic_python_checkers = ['flake8', 'pydocstyle']

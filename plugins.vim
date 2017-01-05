@@ -12,6 +12,7 @@ endif
 call plug#begin($BUNDLEPATH)
 
 " General plugins
+Plug 'vim-syntastic/syntastic'
 Plug 'bling/vim-bufferline'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -21,8 +22,8 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'altercation/vim-colors-solarized'
 
 " Python-related plugins
-Plug 'klen/python-mode'
 Plug 'davidhalter/jedi-vim'
+Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/python_match.vim'
 
 " Finish vim-plug configuration
