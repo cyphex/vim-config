@@ -38,5 +38,8 @@ Plug 'davidhalter/jedi-vim'             " Autocompletion
 Plug 'tmhedberg/SimpylFold'             " Folding
 Plug 'vim-scripts/python_match.vim'     " %-matching for if/else etc.
 
+" Git
+Plug 'tpope/vim-git'                    " Syntax, indent etc.
+
 " Finish vim-plug configuration
 call plug#end()
