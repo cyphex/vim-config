@@ -18,6 +18,11 @@ syntax on
 
 let mapleader=","
 
+" Don't use latin1 (taken from tpope's vim-sensible)
+if &encoding ==# 'latin1' && has('gui_running')
+    set encoding=utf-8
+endif
+
 set autoread
 set background=dark
 set display+=lastline                       " Display incomplete lines
