@@ -10,9 +10,9 @@ if filereadable($BUNDLEFILE)
     source $BUNDLEFILE
 endif
 
-"
-" General settings
-"
+" GENERAL SETTINGS
+" ================
+
 filetype plugin indent on
 syntax on
 
@@ -28,9 +28,9 @@ set hidden                                  " Switch buffers without saving
 set history=1000                            " Plenty of history
 set lazyredraw                              " No redraw while executing macros etc.
 set list
-set listchars=tab:›\ ,trail:•,extends:#
+set listchars=tab:›\ ,trail:•,extends:#     " Special chars for tabs, trailing spaces etc.
 set number                                  " Enable line numbering
-set ruler
+set ruler                                   " Display line and column numbers
 set scrolloff=5                             " Keep lines visible at the viewport edge
 set shellslash                              " Use forward slashes even on windows
 set showcmd
@@ -98,9 +98,8 @@ function! StripTrailingWhitespace()
     call cursor(l, c)
 endfunction
 
-"
-" Plugin configuration and mappings
-"
+" PLUGIN CONFIGURATION AND MAPPINGS
+" =================================
 
 " NERDTree
 map <F2> :NERDTreeToggle<CR>
@@ -133,6 +132,9 @@ let g:syntastic_error_symbol = 'X'
 let g:syntastic_style_error_symbol = 'S'
 let g:syntastic_warning_symbol = 'x'
 let g:syntastic_style_warning_symbol = 's'
+
+" LANGUAGE-/FILETYPE-SPECIFIC CONFIGURATION
+" =========================================
 
 " Python
 let g:jedi#force_py_version = 3

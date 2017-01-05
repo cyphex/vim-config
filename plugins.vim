@@ -11,20 +11,32 @@ endif
 " Enable vim-plug
 call plug#begin($BUNDLEPATH)
 
-" General plugins
-Plug 'vim-syntastic/syntastic'
-Plug 'bling/vim-bufferline'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-scripts/matchit.zip'
+" GENERAL PLUGINS
+" ===============
+
+" UI plugins
+Plug 'vim-airline/vim-airline'          " Fancy status line
+Plug 'bling/vim-bufferline'             " Buffer overview
+
+" Project navigation and management
+Plug 'scrooloose/nerdtree'              " File browser
+Plug 'tpope/vim-fugitive'               " Git integration
+
+" General editing
+Plug 'tpope/vim-surround'               " Manipulate surrounding brackets etc.
+Plug 'vim-scripts/matchit.zip'          " Better %-matching, e.g. for HTML tags
+Plug 'vim-syntastic/syntastic'          " Code checking
+
+" Colorschemes
 Plug 'altercation/vim-colors-solarized'
 
-" Python-related plugins
-Plug 'davidhalter/jedi-vim'
-Plug 'tmhedberg/SimpylFold'
-Plug 'vim-scripts/python_match.vim'
+" LANGUAGE-/FILETYPE-SPECIFIC PLUGINS
+" ===================================
+
+" Python
+Plug 'davidhalter/jedi-vim'             " Autocompletion
+Plug 'tmhedberg/SimpylFold'             " Folding
+Plug 'vim-scripts/python_match.vim'     " %-matching for if/else etc.
 
 " Finish vim-plug configuration
 call plug#end()
