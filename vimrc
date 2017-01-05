@@ -39,6 +39,7 @@ set showmode                                " Display current mode
 set smarttab
 set splitbelow                              " Open split windows below current
 set splitright                              " Open vsplit windows right of current
+set noswapfile
 set wildmenu                                " Better command-line completion
 set wildignore+=*.aux,*.git
 set wildmode=list:longest,full              " Tab-complete longest common part, then all
