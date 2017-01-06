@@ -43,6 +43,11 @@ Plug 'vim-scripts/python_match.vim'     " %-matching for if/else etc.
 Plug 'tpope/vim-git'                    " Syntax, indent etc.
 
 " Jinja2
-Plug 'Glench/Vim-Jinja2-Syntax'         " Jinja2 syntax, indent, autodetect
+Plug 'Glench/Vim-Jinja2-Syntax'         " Syntax, indent, autodetect
+
+" HTML / CSS
+Plug 'othree/html5.vim'                 " Completion, syntax etc.
+Plug 'alvan/vim-closetag'               " Automatically add closing tags
+
 " Finish vim-plug configuration
 call plug#end()
