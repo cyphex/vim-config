@@ -26,6 +26,7 @@ Plug 'tpope/vim-fugitive'               " Git integration
 Plug 'tpope/vim-surround'               " Manipulate surrounding brackets etc.
 Plug 'vim-scripts/matchit.zip'          " Better %-matching, e.g. for HTML tags
 Plug 'vim-syntastic/syntastic'          " Code checking
+Plug 'michaeljsmith/vim-indent-object'  " Idents as a text object
 
 " Colorschemes
 Plug 'altercation/vim-colors-solarized'
